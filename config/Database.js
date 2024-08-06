@@ -5,4 +5,4 @@ const db = new Sequelize('upload_db','root','', {
     dialect: 'mysql'
 })
 
-export default db;
+export default db
