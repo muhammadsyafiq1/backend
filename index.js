@@ -15,7 +15,11 @@ app.use(ProductRoute);
 try {
   await db.authenticate();
   console.log("Database Connected");
-  await Product.sync();
+  // await Product.sync();
 } catch (error) {
   console.error(error);
 }
+
+app.listen(5000, () => {
+  console.log(`Server started on port 5000`);
+});
